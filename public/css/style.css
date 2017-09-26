@@ -1,13 +1,19 @@
-/*body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+
+h4, h5, h6,
+h1, h2, h3 {margin: 0;}
+ul, ol {margin: 0;}
+p {margin: 0;}
+html, body{
+  font-family: 'Source Sans Pro', sans-serif;
+   font-size: 100%;
+   background:#fff;
+}
+a {
+  text-decoration: none;
 }
 
-a {
-  color: #00B7FF;
-}*/
-
-/*--header start here--*/
+/*--nav start here--*/
 nav a {
 	position: relative;
 	display: inline-block;
@@ -62,10 +68,11 @@ nav a:focus {
   width: 35%;
 }
 
-.top-nav {
-  float: right;
-  width: 70%;
-  text-align: right;
+.header-main {
+	padding: 1em 0em 2em 23em;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: fixed;
+	border-bottom: 2px solid orange;
 }
 
 .logo a{
@@ -78,9 +85,7 @@ nav a:focus {
 span.menu {
   display: none;
 }
-.header-main {
-  padding: 1em 0em 1em 0em;
-}
+
 .top-nav ul {
   list-style: none;
   padding: 0.6em 0em 0em 0em;
@@ -88,7 +93,7 @@ span.menu {
 .top-nav ul li {
   display: inline-block;
 }
-.top-nav ul li a{
+.top-nav ul li a {
 	color: #fff;
 	text-decoration: none;
 	font-size: 1.05em;
@@ -96,10 +101,14 @@ span.menu {
 	position:relative;
 	z-index: 999;
 }
-.top-nav ul li a:hover,.top-nav ul li a.active{
-	color:orange;
 
+.top-nav ul li a:hover,.top-nav ul li a.active{
+	color: orange;
 }
+
+/*--nav ends here--*/
+
+
 
 /*--banner starts here--*/
 
@@ -112,38 +121,62 @@ span.menu {
 }
 
 .banner {
-  background: url(../images/banner2.jpg)no-repeat;
+	min-height: 107px;
+}
+
+.carousel-inner > .item > img {
+  width:100% !important;
+  height:550px !important;
+}
+
+.sel-imgs {
+	width: 100%;
+	background-size: cover !important;
+}
+
+/*--banner-strip ends here--*/
+.bann-strip {
+  min-height: 350px;
+	/*background-image: image(images/banner.jpg);*/
 	background-size: cover;
-  min-height: 705px;
 }
-.banner-two {
-  background: url(../images/banner.jpg)no-repeat;
-  min-height:160px;
-  background-size: cover;
+.banner-strip-main {
+  text-align: center;
+	padding: 7em 0em 0em 0em;
 }
+.banner-strip-main h3 {
+  font-size: 2.5em;
+  color:#d3bda5;
+  margin: 0em 0em 0.3em 0em;
+  font-family: 'Squada One', cursive;
+}
+.banner-strip-main p {
+  font-size: 1.1em;
+  color: #fff;
+  width: 40%;
+  margin: 0em auto 0em;
+  line-height: 1.8em;
+}
+/*--banner-strip ends here--*/
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*--banner ends here--*/
-
-
+/*--information starts here--*/
 .information {
-    padding: 5em 0em;
+    padding: 3em 0em;
 }
+
+.info-top {
+    text-align: center;
+    padding-bottom: 3em;
+}
+.info-top h2 {
+    font-size: 3em;
+    color: orange;
+    font-family: 'Cuprum', sans-serif;
+}
+
 .information-grid h4 {
     font-size: 1.5em;
     color: #48a4b3;
@@ -163,6 +196,9 @@ span.info-icons {
     color: #636262;
     line-height: 1.8em;
 }
+
+
+
 /*--information end here--*/
 
 
@@ -378,7 +414,7 @@ span.hovicon:before {
 /*--facts start here--*/
 .fact {
     padding: 5em 0em;
-    background: url(../images/fact.jpg)no-repeat center;
+    background: url(images/banner.jpg)no-repeat center !important;
     background-size: cover;
     min-height: 410px;
 }
@@ -407,8 +443,18 @@ span.hovicon:before {
 /*--footer start here--*/
 .footer {
   background: #282929;
-  padding: 4em 0em 4em 0em;
+  /*padding: 4em 0em 4em 0em;*/
+	padding: 1.5em 0em 1.5em 0em;
 	color: white;
+}
+
+ul.foot {
+	list-style: none !important;
+
+}
+
+form.foot {
+	color: black;
 }
 
 .copyright {
@@ -442,7 +488,5 @@ span.hovicon:before {
 	color: red;
 }
 
-.footer {
-  padding: 1.5em 0em 1.5em 0em;
-}
+
 /*--footer end here--*/
