@@ -43,6 +43,13 @@ app.get('/previous-work', (request, response, next) => {
   response.render('work.ejs');
 });
 
+app.get('/about', (request, response, next) => {
+  response.render('about.ejs');
+});
+
+app.get('/services', (request, response, next) => {
+  response.render('service.ejs');
+});
 
 
 //-----ROUTES GO HERE ^^^-------------------------------------------------------
