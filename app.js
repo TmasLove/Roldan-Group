@@ -51,6 +51,9 @@ app.get('/services', (request, response, next) => {
   response.render('service.ejs');
 });
 
+app.get('/contact-us', (request, response, next) => {
+  response.render('contact.ejs');
+});
 
 //-----ROUTES GO HERE ^^^-------------------------------------------------------
 
